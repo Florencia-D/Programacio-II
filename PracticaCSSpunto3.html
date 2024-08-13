@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header,
+    footer {
+        position: fixed;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+    }
+
+    header {
+        top: 0;
+
+    }
+
+    footer {
+        bottom: 0;
+    }
+
+    .contenedor {
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .navegacion {
+        display: inline-block;
+        width: 25%;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+    }
+
+    .contenido {
+        display: inline-block;
+        width: 75%;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1> Encabezado fijo</h1>
+
+    </header>
+    <div class="contenedor">
+
+        <span class="navegacion">
+            <h2> Navegacion</h2>
+            <p> Enlace 1 </p>
+            <p> Enlace 2 </p>
+            <p> Enlace 3 </p>
+        </span>
+        <span class="contenido">
+            <h2>contenido</h2>
+            <p> este es el contenido principal de la pagina</p>
+
+        </span>
+    </div>
+
+    <footer>
+        <p>Pie de pagina fijo</p>
+    </footer>
+</body>
+
+</html>
