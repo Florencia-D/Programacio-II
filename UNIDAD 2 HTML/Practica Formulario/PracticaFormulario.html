@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Formulario</title>
+</head>
+<style>
+    body {
+        background-color: rgb(135, 162, 253);
+    }
+</style>
+
+<body>
+    <form action="#" name="Formulario">
+        <label for="nombre"><b>Nombre:</b></label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" maxlength="30"><br><br>
+        <label for="Email"> <b>Email:</b></label><br>
+        <input type="text" id="email" name="email" placeholder="correo@empresa.com" maxlength="30"><br><br>
+        <label for="asunto"><b>Asunto</b></label><br>
+        <select name="asunto" id="asunto" size="3">
+            <option value="PresupuestoWeb">Pedir presupuesto web</option>
+            <option value="CitaPrevia">Solicitar cita previa</option>
+            <option value="Otros">Otros</option>
+        </select><br><br>
+    </form>
+    <label for="marketing"><b>¿Cómo nos ha conocido?</b></label>
+    <div class="marketing">
+        <input type="checkbox" value="amigo" id="amigo">
+        <label for="amigo">Un amigo</label>
+        <input type="checkbox" value="google" id="google">
+        <label for="googleando">Googleando</label>
+        <input type="checkbox" value="buzoneo" id="buzoneo">
+        <label for="buzoneo">Buzoneo</label>
+        <input type="checkbox" value="otro" id="otro">
+        <label for="otro">Otros</label> <br><br>
+
+        <laber for="mensaje"><b>Escribe tu mensaje</b></laber><br>
+        <textarea name="mensaje" id="mensaje" maxlength="300" rows="8" cols="45"></textarea><br>
+        <input type="checkbox" value="Acepta_RGPD" id="rgpd" required>
+        <label for="rgpd" class="rgpd">He leído y acepto el <a href="#" target="_blank"> aviso legal y la politica de
+                privacidad.</a> </label>
+
+    </div>
+</body>
+
+</html>
